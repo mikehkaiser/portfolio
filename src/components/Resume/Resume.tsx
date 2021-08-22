@@ -23,6 +23,22 @@ const useStyles = makeStyles({
         width: '100%',
         height: '100%',
     },
+    contactHead:{
+        textAlign: 'center',
+        margin: '1vw',
+        fontFamily: "'Poiret One', cursive"
+    },
+    mainContainer:{
+        display: 'block',
+        position: 'relative',
+        margin: 'auto',
+        width: 'fit-content',
+        top: '20%',
+        padding: '3vw',
+        backgroundColor: 'rgba(255, 255, 255, 0.6)',
+        borderRadius: '5px'
+
+    },
     
 })
 
@@ -34,7 +50,12 @@ export const Resume = () => {
             <main className={classes.main}>
                 <div className={classes.main_scrim}>
             <Navbar />
-            <h1>Resume goes here</h1>
+
+            <div className={classes.mainContainer}>
+                        <div className={classes.contactHead}>
+                            <h1>My résumé</h1>
+                        </div>
+                    </div>
             </div>
             </main>
         </div>

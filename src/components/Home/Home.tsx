@@ -1,7 +1,10 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import '../../styles.css';
+import { makeStyles, Button } from '@material-ui/core';
 import turntable from '../../assets/turntable-on-desk.jpg';
-import { Navbar } from '../../components'
+import { Navbar } from '../../components';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
 interface Props{
     title: string;
@@ -13,7 +16,7 @@ const useStyles = makeStyles({
         margin: '0'
     },
     title_text:{
-        fontFamily: "'Kaushan Script', serif",
+        fontFamily: "'Poiret One', cursive",
     },
     main: {
         background: `url(${turntable})`,
@@ -26,18 +29,32 @@ const useStyles = makeStyles({
     },
     main_text:{
         textAlign: 'center',
+        backgroundColor: 'rgba(255, 255, 255, 0.6)',
+        borderRadius: '5px',
         position: 'relative',
-        top: '25%',
+        top: '35%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        fontFamily: "'Lato', sans-serif",
-        color: 'black'
+        color: 'black',
+        fontFamily: "'Marcellus', serif",
+        width: 'fit-content',
+        padding: '3vw'
     },
     main_scrim:{
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
         backgroundSize: 'cover',
         width: '100%',
         height: '100%',
+    },
+    contactLink:{
+        textDecoration: 'none'
+    },
+    button:{
+        textTransform: 'none',
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        width: 'fit-content',
+        fontFamily: "'Lato', sans-serif",
+        margin: '2vw 1vw 0 1vw',
     },
 })
 
@@ -51,8 +68,15 @@ export const Home = ( props:Props) => {
                     <Navbar />
                     <div className={classes.main_text}>
                     <h1 className={classes.title_text}>{ props.title }</h1>
-                    <p>Functional, Beautiful Web Applications</p>
+                    <h3>Functional, Beautiful Web Applications</h3>
+                    <a className={classes.contactLink} href="https://www.linkedin.com/in/mike-kaiser-603aa129/">
+                        <Button variant="contained" className={classes.button} startIcon={<LinkedInIcon />}>LinkedIn</Button>
+                    </a>
+                    <a href="https://github.com/mikehkaiser" className={classes.contactLink}>
+                        <Button variant="contained" className={classes.button} startIcon={<GitHubIcon />}>Github</Button>
+                    </a>
                     </div>
+                    
                 </div>
             </main>
         </div>

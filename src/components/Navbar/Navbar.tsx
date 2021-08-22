@@ -23,17 +23,16 @@ const useStyles = makeStyles({
     },
     logo_a: {
         color: 'white',
-        fontFamily: "'Kaushan Script', serif",
     },
     logo_navigation:{
         listStyle: 'none',
-        textTransform: 'uppercase',
         textDecoration: 'none'
     },
     navigation: {
         display: 'flex',
         marginLeft: 'auto',
-        marginRight: 'auto'
+        marginRight: 'auto',
+        fontFamiliy: "'Lato', sans-serif"
     },
     nav_a:{
         display: 'block',
@@ -45,7 +44,7 @@ const useStyles = makeStyles({
     selected:{
         fontWeight: 'bold',
         marginTop: '0.5vw',
-        border: '1px solid black',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
         borderRadius: '3px',
         boxShadow: '0 1px 3px rgb(0 0 0 / 70%)'
     }
