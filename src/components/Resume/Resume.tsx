@@ -1,7 +1,9 @@
 import React from 'react';
 import { Navbar } from '../Navbar';
 import { makeStyles } from '@material-ui/core';
-import turntable from '../../assets/turntable-on-desk.jpg'
+import turntable from '../../assets/turntable-on-desk.jpg';
+
+
 
 const useStyles = makeStyles({
     root:{
@@ -49,14 +51,15 @@ export const Resume = () => {
         <div>
             <main className={classes.main}>
                 <div className={classes.main_scrim}>
-            <Navbar />
+                <Navbar />
 
-            <div className={classes.mainContainer}>
+                    <div className={classes.mainContainer}>
                         <div className={classes.contactHead}>
-                            <h1>My résumé</h1>
+                        <h1>Resume goes here</h1>
+
                         </div>
                     </div>
-            </div>
+                </div>
             </main>
         </div>
     )
