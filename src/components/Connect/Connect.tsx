@@ -70,6 +70,12 @@ const useStyles = makeStyles({
         textAlign: 'center',
         margin: '1vw',
         fontFamily: "'Poiret One', cursive"
+    },
+    contacts:{
+        display: 'flex',
+        justifySelf: 'center',
+        textAlign: 'left',
+        fontFamily: "'Lato', sans-serif"
     }
 })
 
@@ -86,7 +92,12 @@ export const Connect =()=>{
                             <h1>Let's connect</h1>
                         </div>
                         <div className={classes.contactText}>
-                            <p>I'd love to talk about my work, my process, and how I can help create custom solutions to meet your needs.</p>
+                            <p>I'd love to talk about my work and how I can help create custom solutions to meet your needs.</p>
+                            <p>You can click a button below, or reach me via:</p>
+                            <div>
+                            <p>Email: mikehkaiser@gmail.com</p>
+                            <p>Phone: (605) 209-4350</p>
+                            </div>
                         </div>                
                         <div className={classes.contactContainer}>
                             <ul className={classes.contactList}>

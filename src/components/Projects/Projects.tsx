@@ -121,7 +121,7 @@ export const Projects = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                    <a className={classes.card_a} href="">
+                                    <a className={classes.card_a} href="https://weather-check-3fd18.web.app/?zipcode-field=60618">
                                     <Button className={classes.button} size="small" color="primary">
                                     View App
                                     </Button>
