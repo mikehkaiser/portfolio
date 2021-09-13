@@ -15,8 +15,7 @@ const useStyles = makeStyles({
         backgroundColor: 'none',
         justifyContent: 'space-between',
         alignItems: 'center',
-        //boxShadow: '0 2px 5px rgb(0 0 0 / 100%)',
-        fontFamily: "'Lato', sans-serif",
+        fontFamily: "'Lato', sans-serif"
     },
     logo:{
         margin: '0 0 0 0.45em'
@@ -44,7 +43,8 @@ const useStyles = makeStyles({
     selected:{
         fontWeight: 'bold',
         marginTop: '0.5vw',
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        backgroundColor: 'rgb(38, 38, 38)',
+        color: 'white',
         borderRadius: '3px',
         boxShadow: '0 1px 3px rgb(0 0 0 / 70%)'
     }

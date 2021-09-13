@@ -19,7 +19,8 @@ const useStyles = makeStyles({
         fontFamily: "'Poiret One', cursive",
     },
     main: {
-        background: `url(${turntable})`,
+        // background: `url(${turntable})`,
+        backgroundColor: 'white',
         width: '100%',
         height: '100%',
         backgroundSize: 'cover',
@@ -29,7 +30,7 @@ const useStyles = makeStyles({
     },
     main_text:{
         textAlign: 'center',
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
+        backgroundColor: 'rgb(237, 237, 237)',
         borderRadius: '5px',
         position: 'relative',
         top: '35%',
@@ -40,18 +41,19 @@ const useStyles = makeStyles({
         width: 'fit-content',
         padding: '3vw'
     },
-    main_scrim:{
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        backgroundSize: 'cover',
-        width: '100%',
-        height: '100%',
-    },
+    // main_scrim:{
+    //     backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    //     backgroundSize: 'cover',
+    //     width: '100%',
+    //     height: '100%',
+    // },
     contactLink:{
         textDecoration: 'none'
     },
     button:{
         textTransform: 'none',
-        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        color: 'white',
+        backgroundColor: 'rgba(38, 38, 38, 0.9)',
         width: 'fit-content',
         fontFamily: "'Lato', sans-serif",
         margin: '2vw 1vw 0 1vw',
@@ -64,7 +66,7 @@ export const Home = ( props:Props) => {
     return (
         <div className={classes.root}>
             <main className={classes.main}>
-                <div className={classes.main_scrim}>
+                {/* <div className={classes.main_scrim}> */}
                     <Navbar />
                     <div className={classes.main_text}>
                     <h1 className={classes.title_text}>{ props.title }</h1>
@@ -77,7 +79,7 @@ export const Home = ( props:Props) => {
                     </a>
                     </div>
                     
-                </div>
+                {/* </div> */}
             </main>
         </div>
     )

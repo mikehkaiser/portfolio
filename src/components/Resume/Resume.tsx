@@ -11,17 +11,10 @@ const useStyles = makeStyles({
         margin: '0'
     },
     main: {
-        background: `url(${turntable})`,
-        width: '100%',
-        height: '100%',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        position: 'absolute',
+        // background: `url(${turntable})`,
+        backgroundColor: 'rgb(237, 237, 237)',
     },
     main_scrim:{
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        backgroundSize: 'cover',
         width: '100%',
         height: '100%',
     },
@@ -35,7 +28,7 @@ const useStyles = makeStyles({
         position: 'relative',
         margin: 'auto',
         width: 'fit-content',
-        top: '20%',
+        top: '15%',
         padding: '3vw',
         backgroundColor: 'rgba(255, 255, 255, 0.6)',
         borderRadius: '5px'

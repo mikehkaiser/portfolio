@@ -15,30 +15,19 @@ const useStyles = makeStyles({
         margin: '0'
     },
     main: {
-        background: `url(${turntable})`,
-        width: '100%',
-        height: '100%',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        position: 'absolute',
+        // background: `url(${turntable})`,
+        backgroundColor: 'rgb(237, 237, 237)',
     },
     main_scrim:{
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        backgroundSize: 'cover',
         width: '100%',
         height: '100%',
     },
     mainContainer:{
         display: 'block',
-        position: 'relative',
         margin: 'auto',
         width: 'fit-content',
-        top: '20%',
+        top: '15%',
         padding: '3vw',
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderRadius: '5px'
-
     },
     contactContainer:{
         display: 'flex',
@@ -57,8 +46,11 @@ const useStyles = makeStyles({
     },
     button:{
         textTransform: 'none',
-        backgroundColor: 'rgba(255, 255, 255, 0.9)',
-        width: 'fit-content',
+        backgroundColor: "rgb(38, 38, 38)",
+        border: '1px solid black',
+        color: "rgb(237, 237, 237)",
+        borderRadius: '3px',
+        padding: '8px',
         fontFamily: "'Lato', sans-serif"
     },
     contactText:{
@@ -86,7 +78,7 @@ export const Connect =()=>{
         <div>
             <main className={classes.main}>
                 <div className={classes.main_scrim}>
-                <Navbar />
+                    <Navbar />
                     <div className={classes.mainContainer}>
                         <div className={classes.contactHead}>
                             <h1>Let's connect</h1>
@@ -102,19 +94,19 @@ export const Connect =()=>{
                         <div className={classes.contactContainer}>
                             <ul className={classes.contactList}>
                                 <li className={classes.listItem}>
-                                    <a href="mailto:mikehkaiser@gmail.com" className={classes.contactLink} target="_top">
+                                    <a href="mailto:mikehkaiser@gmail.com" className={classes.contactLink} target="_blank">
                                     <Button variant="contained" className={classes.button} startIcon={<CreateIcon />}>Send me an email</Button>
                                     </a>
                                 </li>
                                 
                                 <li className={classes.listItem}>
-                                    <a className={classes.contactLink} href="https://www.linkedin.com/in/mike-kaiser-603aa129/">
+                                    <a href="https://www.linkedin.com/in/mike-kaiser-603aa129/" className={classes.contactLink}  target="_blank">
                                     <Button variant="contained" className={classes.button} startIcon={<LinkedInIcon />}>Connect on LinkedIn</Button>
                                     </a>
                                 </li>
                                 
                                 <li className={classes.listItem}>
-                                    <a href="https://github.com/mikehkaiser" className={classes.contactLink}>
+                                    <a href="https://github.com/mikehkaiser" className={classes.contactLink} target="_blank">
                                     <Button variant="contained" className={classes.button} startIcon={<GitHubIcon />}>View on Github</Button>
                                     </a>
                                 </li>
