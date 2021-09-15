@@ -13,10 +13,10 @@ ReactDOM.render(
         <Route exact path='/'>
           <Home  title={'Mike Kaiser'} />
         </Route>
-
-        <Route path='/resume'>
+{/* Hiding Resume until I can get a pdf posted on hte page */}
+        {/* <Route path='/resume'>
           <Resume />
-        </Route>
+        </Route> */}
 
         <Route path='/projects'>
           <Projects />

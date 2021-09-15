@@ -109,7 +109,7 @@ export const Projects = () => {
                             />
                             <CardContent>
                             <Typography className={classes.typographyTitle} gutterBottom variant="h5" component="h2">
-                                React project
+                                Your Bike Shop
                             </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">
                                 <p>Using React to make calls to a PostgreSQL database built with Flask.</p>

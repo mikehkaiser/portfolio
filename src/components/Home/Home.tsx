@@ -13,14 +13,15 @@ interface Props{
 const useStyles = makeStyles({
     root:{
         padding: '0',
-        margin: '0'
+        margin: '0',
+        backgroundColor: 'rgb(237, 237, 237)'
     },
     title_text:{
         fontFamily: "'Poiret One', cursive",
     },
     main: {
         // background: `url(${turntable})`,
-        backgroundColor: 'white',
+        backgroundColor: 'rgb(237, 237, 237)',
         width: '100%',
         height: '100%',
         backgroundSize: 'cover',

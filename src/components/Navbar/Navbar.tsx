@@ -64,9 +64,9 @@ export const Navbar = () =>{
                         <li>
                             <NavLink exact to="/projects" className={classes.nav_a} activeClassName={classes.selected}>Projects</NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavLink exact to="/resume" className={classes.nav_a} activeClassName={classes.selected}>Résumé</NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink exact to="/connect" className={classes.nav_a} activeClassName={classes.selected}>Connect</NavLink>
                         </li>

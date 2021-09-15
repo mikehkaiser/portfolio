@@ -8,11 +8,18 @@ import turntable from '../../assets/turntable-on-desk.jpg';
 const useStyles = makeStyles({
     root:{
         padding: '0',
-        margin: '0'
+        margin: '0',
+        backgroundColor: 'rgb(237, 237, 237)'
     },
     main: {
         // background: `url(${turntable})`,
         backgroundColor: 'rgb(237, 237, 237)',
+        width: '100%',
+        height: '100%',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        position: 'absolute',
     },
     main_scrim:{
         width: '100%',
@@ -30,9 +37,6 @@ const useStyles = makeStyles({
         width: 'fit-content',
         top: '15%',
         padding: '3vw',
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderRadius: '5px'
-
     },
     
 })

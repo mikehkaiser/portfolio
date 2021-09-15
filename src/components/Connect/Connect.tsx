@@ -17,6 +17,12 @@ const useStyles = makeStyles({
     main: {
         // background: `url(${turntable})`,
         backgroundColor: 'rgb(237, 237, 237)',
+        width: '100%',
+        height: '100%',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        position: 'absolute',
     },
     main_scrim:{
         width: '100%',
@@ -24,6 +30,7 @@ const useStyles = makeStyles({
     },
     mainContainer:{
         display: 'block',
+        position: 'relative',
         margin: 'auto',
         width: 'fit-content',
         top: '15%',
